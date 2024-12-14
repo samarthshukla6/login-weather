@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather app</title>
+</head>
+
+<body>
+
+    <video autoplay muted loop class="video-bg">
+        <source src="1851190-uhd_3840_2160_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay"></div>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <!-- Main Container for the weather web app -->
+            <div class="weatherContainer">
+                <h2 class="appHeading" style="color: white;"> Weather App </h2>
+                <img id="weatherImage" >
+                <!-- Input Divition for city name -->
+                <div class="search">
+                    <form action="" id="weatherForm">
+                        <input type="text" name="" id="weatherInput" placeholder="Enter your city here...">
+                        <button class="searchBtn" type="submit">
+                            
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            
+                        </button>
+                    </form>
+                </div>
+                <!-- Outut Will show on the screen -->
+                <h2 id="city"></h2>
+                <p class="weatherMain" id="weatherMain"></p>
+                <h2 id="temp"><span class="temp"></span></h2>
+                <div class="todayDates"></div>
+                <div id="todayTime"></div>
+            </div>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1 style="line-height: 195%; color: #d0f0ff;">Welcome Mate!</h1> 
+                <h1 style="line-height: 195%; color: #d0f0ff; font-size: 24px;">Here's our Weather App</h1> 
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h2>Your feedback really matters!</h2>
+                    <p>If you have any feedback suggesting updates in the weather app, we will really appreciate your contribution!</p>
+                    
+                    <form action="" class="feedback">
+                        <textarea name="feedback" id="" cols="30" rows="5" placeholder="Please give your feedback" style="background: transparent; color: white; width: 325px; "></textarea>
+                    </form>
+                    <button class="hidden" id="login">Submit || Home</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h2>Feature of the website</h3>
+                    <p>
+                        ❅ Personalized weather updates based on user's chosen location.
+                        <br>
+                        ❅ Real-time temperature display with intuitive visual weather representation.
+                        <br>
+                        ❅ Seamless registration process for a personalized user experience.
+                        <br>
+                        ❅ Seamless API integration for accurate and up-to-date weather data.
+                        <br>
+                        ❅ Responsive design ensures optimal viewing on all devices.</p>
+                    <button class="hidden" id="register">Check Weather</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
